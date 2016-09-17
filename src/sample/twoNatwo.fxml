@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
+   <children>
+      <SplitPane dividerPositions="0.2483221476510067, 0.8288590604026845" orientation="VERTICAL" prefHeight="300.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+            <Pane>
+               <children>
+                  <Label prefHeight="61.0" prefWidth="298.0" text="Впишите свою систему уравнений" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="163.0" prefWidth="298.0">
+               <children>
+                  <GridPane layoutX="49.0" layoutY="30.0" prefHeight="101.0" prefWidth="200.0" SplitPane.resizableWithParent="false">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="101.0" minWidth="10.0" prefWidth="101.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="99.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="150.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="53.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="52.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="fieldX00" prefHeight="27.0" prefWidth="74.0" />
+                        <Label text=" X1 +" GridPane.columnIndex="1" />
+                        <Label text=" X1 +" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="fieldX01" GridPane.columnIndex="2" />
+                        <TextField fx:id="fieldX11" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Label text=" X2 + = " GridPane.columnIndex="3" />
+                        <Label text=" X2 + = " GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <TextField fx:id="fieldX02" GridPane.columnIndex="4" />
+                        <TextField fx:id="fieldX12" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <TextField fx:id="fieldX10" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+               </children>
+            </Pane>
+            <Pane>
+               <children>
+                  <Button defaultButton="true" layoutX="90.0" layoutY="7.0" mnemonicParsing="false" onAction="#actionTakeData" text="Подтвердить">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

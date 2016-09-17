@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
+    <children>
+        <SplitPane dividerPositions="0.2483221476510067, 0.8288590604026845" orientation="VERTICAL" prefHeight="300.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <Pane>
+                    <children>
+                        <Label layoutX="55.0" layoutY="15.0" prefHeight="61.0" prefWidth="298.0" text="Впишите свою систему уравнений" textAlignment="CENTER" wrapText="true">
+                            <font>
+                                <Font size="19.0" />
+                            </font>
+                            <padding>
+                                <Insets top="10.0" />
+                            </padding>
+                        </Label>
+                    </children>
+                </Pane>
+                <Pane prefHeight="163.0" prefWidth="298.0">
+                    <children>
+                        <GridPane layoutX="-3.0" layoutY="1.0" prefHeight="223.0" prefWidth="398.0" SplitPane.resizableWithParent="false">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="101.0" minWidth="10.0" prefWidth="101.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="99.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints maxHeight="53.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="52.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="52.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="52.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <TextField fx:id="fieldX00" prefHeight="27.0" prefWidth="74.0" />
+                                <Label text=" X1 +" GridPane.columnIndex="1" />
+                                <Label text=" X1 +" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <TextField fx:id="fieldX01" GridPane.columnIndex="2" />
+                                <TextField fx:id="fieldX11" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                <Label text=" X3 + " GridPane.columnIndex="5" />
+                                <Label text=" X3 + " GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                                <TextField fx:id="fieldX03" GridPane.columnIndex="6" />
+                                <TextField fx:id="fieldX13" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                                <TextField fx:id="fieldX10" GridPane.rowIndex="1" />
+                                <Label text=" X2 + " GridPane.columnIndex="3" />
+                                <Label text=" X2 + " GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                <Label text=" X2 + " GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                <Label text=" X1 +" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                <Label text=" X3 + " GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                                <TextField fx:id="fieldX20" GridPane.rowIndex="2" />
+                                <TextField fx:id="fieldX21" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                <TextField fx:id="fieldX22" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                <TextField fx:id="fieldX12" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                <TextField fx:id="fieldX02" GridPane.columnIndex="4" />
+                                <TextField fx:id="fieldX23" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                        <TextField fx:id="fieldX30" GridPane.rowIndex="3" />
+                        <TextField fx:id="fieldX31" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <TextField fx:id="fieldX32" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                        <TextField fx:id="fieldX33" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                        <TextField fx:id="fieldX04" GridPane.columnIndex="8" />
+                        <TextField fx:id="fieldX14" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                        <TextField fx:id="fieldX24" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                        <TextField fx:id="fieldX34" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                        <Label text=" X1 + " GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label text=" X2 + " GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <Label text=" X3 + " GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                        <Label text=" X4 = " GridPane.columnIndex="7" />
+                        <Label text=" X4 = " GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                        <Label text=" X4 = " GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                        <Label text=" X4 = " GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                            </children>
+                            <padding>
+                                <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                            </padding>
+                        </GridPane>
+                    </children>
+                </Pane>
+                <Pane>
+                    <children>
+                        <Button defaultButton="true" layoutX="140.0" layoutY="13.0" mnemonicParsing="false" onAction="#actionTakeData" text="Подтвердить">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </Pane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
