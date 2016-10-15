@@ -1,0 +1,4 @@
+This project was developed for getting solutions in combined equations by Gaussian method.
+There are 2 technologies like JavaCore and JavaFX used in this program.
+First of all you must input amount of these equations from 1 till 5, then you must input your numbers and enter button.
+In result you get solutions combined equations.
